@@ -1,0 +1,203 @@
+.docuFncBody {
+    background: white;
+    padding: 5px;
+}
+
+body {
+    margin: 0px;
+    background: aliceblue;
+}
+
+.docuFnc {
+    margin: 0px auto;
+    margin-bottom: 15px;
+    font-family: monospace;
+}
+
+h1.docuFncHeader {
+    margin: 0px;
+    background: darkcyan;
+    font-size: 20px;
+    color: white;
+    padding: 3px 6px;
+}
+
+h3.docuFncBodyHeader {
+    margin: 10px 0px 0px 0px;
+}
+
+.docuFncContainer {border: 2px solid darkcyan;}
+
+span.wrapperReturnType {
+    font-weight: bold;
+}
+
+.docuFncBodyWrapperHeader span.wrapperReturnType {
+    color: blue;
+}
+
+span.wrapperParamLabel {
+    font-style: italic;
+}
+
+.docuFncBodyWrapperBody {
+    margin-left: 20px;
+}
+
+ul.docuFncBodyWrapperParametersList {
+    padding: 0px;
+    list-style-type: none;
+    margin: 0px;
+}
+
+.searchBoxContainer {
+    margin: 0 auto;
+}
+
+.searchBoxBackground {
+    display: flex;
+    justify-content: center;
+    background: white;
+    height: 40px;
+    border: 1px solid lightblue;
+}
+
+.search {
+    margin-bottom: 10px;
+}
+
+.search #searchBox {
+    background: none;
+    border: none;
+    width: 90%;
+    font-size: 20px;
+    display: inline;
+}
+
+.searchBoxInputContainer {
+    width: 100%;
+    padding: 10px;
+    align-self: center;
+}
+
+input#searchBox:focus {
+    outline: none;
+}
+
+span.wrapperParamConst {
+    color: purple;
+}
+
+.pageHeader{
+margin: 0 auto;
+height: 64px;
+background: lightslategrey;
+margin-bottom: 10px;
+color: #FFFFFF;
+font-family: monospace;
+}
+
+.docuFncHeader .namespace{
+    font-size: 10px;
+    color: #004848;
+    padding-right: 2px;
+}
+
+.docuFncHeader .include{
+    float: right;
+    font-size: 12px;
+    color: #E0FFFF;
+}
+
+.pageContainer {
+    width: 70%;
+    margin: 0 auto;
+}
+
+footer.mefutter {
+    color: lightslategrey;
+    text-align: center;
+    font-family: monospace;
+    margin-bottom: 10px;
+}
+
+footer.mefutter a {
+    color: lightslategrey;
+}
+
+div.errorMessage {
+    text-align: center;
+    margin: 30px 0px;
+    font-family: monospace;
+    color: darkred;
+}
+
+h1.errorTitle {
+    margin: 5px
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+span.errorDetail{
+    font-style: italic;
+    font-weight: bold;
+}
+
+
+/*Loader*/
+.loader:before,
+.loader:after,
+.loader {
+  border-radius: 50%;
+  width: 2.5em;
+  height: 2.5em;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation: load7 1.8s infinite ease-in-out;
+  animation: load7 1.8s infinite ease-in-out;
+}
+.loader {
+  font-size: 10px;
+  margin: 80px auto;
+  position: relative;
+  text-indent: -9999em;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+.loader:before {
+  left: -3.5em;
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+.loader:after {
+  left: 3.5em;
+}
+.loader:before,
+.loader:after {
+  content: '';
+  position: absolute;
+  top: 0;
+}
+@-webkit-keyframes load7 {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 2.5em 0 -1.3em #000;
+  }
+  40% {
+    box-shadow: 0 2.5em 0 0 #000;
+  }
+}
+@keyframes load7 {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 2.5em 0 -1.3em #000;
+  }
+  40% {
+    box-shadow: 0 2.5em 0 0 #000;
+  }
+}

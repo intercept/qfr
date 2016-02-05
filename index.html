@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="./res/css/master.css" media="screen" title="no title" charset="utf-8">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" async>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+        <script src="./res/js/interceptQFR.js"></script>
+    </head>
+
+    <body>
+        <div class="pageOuter">
+            <div class="pageContainer">
+                <div class="headerContainer">
+                    <header class="pageHeader">
+                        <div style="padding-left: 30px">
+                            <span style="font-size: 30px;font-weight: bolder;">Intercept</span><br/>
+                            Quick Function Reference
+                        </div>
+                    </header>
+                </div>
+                <div id="searchBoxOCtr" class="search" style="display: none;">
+                    <div class="searchBoxContainer">
+                        <div class="searchBoxBackground">
+                            <div class="searchBoxInputContainer">
+                                <i class="fa fa-search fa-2x" style="font-size: 24px; padding: 0px 8px 0px 3px"> </i>
+                                <input id="searchBox" type="text" placeholder="Search wrappers..." />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="docu" class="docu">
+
+                </div>
+                <div id="loadingSpinner" class="loader">Loading...</div>
+                <footer class="mefutter">
+                    Intercept: Quick Function Reference<br />
+                    Made with &lt;3 by <a href="https://github.com/Verox-" target="_blank">Verox-</a> for the <a href="https://github.com/NouberNou/intercept" target="_blank">Intercept</a> project.<br />
+                </footer>
+            </div>
+        </div>
+        <script>
+            $( document ).ready(function() {
+                MakePage();
+            });
+        </script>
+    </body>
+</html>
