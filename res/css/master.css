@@ -143,6 +143,14 @@ span.errorDetail{
     font-weight: bold;
 }
 
+h1.docuFncHeader.NoDoc {
+    background: #8B0000;
+}
+
+.docuFncContainer.NoDoc {
+    border-color: #8B0000;
+}
+
 
 /*Loader*/
 .loader:before,

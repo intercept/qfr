@@ -57,10 +57,19 @@ function PopulatePage(wrappers)
 
 function MakeWrapperInfo( index, data )
 {
-    var rpr = "<div class=\"docuFnc\" data-sqf=\""+data.sqf+"\" data-intercept=\""+data.signature.name+"\" ><div class=\"docuFncContainer\">";
+    var NoDocClass = "";
+    var BikiLink = "<a href=\"https://community.bistudio.com/wiki/"+data.sqf+"\" class=\"biki\" target=\"_blank\">BIKI</a>";
+    if (data.nodoc == true)
+    {
+        BikiLink = "<a class=\"biki\">NO BIKI DOCUMENTATION!</a>";
+        NoDocClass = "NoDoc"; //
+    }
+
+
+    var rpr = "<div class=\"docuFnc\" data-sqf=\""+data.sqf+"\" data-intercept=\""+data.signature.name+"\" ><div class=\"docuFncContainer "+NoDocClass+"\">";
 
     // First we make the header.
-    rpr += "<h1 class=\"docuFncHeader\">" + data.sqf + "<a href=\"https://community.bistudio.com/wiki/"+data.sqf+"\" class=\"biki\" target=\"_blank\">BIKI</a><span class=\"include\">#include \""+ data.include +"\"</span></h1>";
+    rpr += "<h1 class=\"docuFncHeader "+NoDocClass+"\">" + data.sqf + BikiLink +"<span class=\"include\">#include \""+ data.include +"\"</span></h1>";
     rpr += "<div class=\"docuFncBody\">";
 
     // Then we make the description.
