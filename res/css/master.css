@@ -97,10 +97,10 @@ span.wrapperParamConst {
 font-family: monospace;
 }
 
-.docuFncHeader .namespace{
+.docuFncHeader .biki{
     font-size: 10px;
     color: #004848;
-    padding-right: 2px;
+    padding-left: 4px;
 }
 
 .docuFncHeader .include{
