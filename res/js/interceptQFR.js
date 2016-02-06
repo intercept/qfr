@@ -24,7 +24,7 @@ function MakePage() {
 
 
         $('#searchBox').on('input', function() {
-            var searchValue = $("#searchBox").val();
+            var searchValue = $("#searchBox").val().trim();
             location.hash = searchValue;
             doFilter(searchValue);
         });
