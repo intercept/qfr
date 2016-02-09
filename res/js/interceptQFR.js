@@ -1,6 +1,6 @@
 function MakePage() {
 
-    $.getJSON("http://verox.me/filestore/datax.json", function( data ) {
+    $.getJSON("http://intercept.github.io/data.json", function( data ) {
         var wrappers = [];
         var wrapperN = 0;
         $.each( data, function( key, val ) {
