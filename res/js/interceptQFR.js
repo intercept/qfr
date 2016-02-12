@@ -1,6 +1,6 @@
 function MakePage() {
 
-    $.getJSON("intercept.github.io/data.json", function( data ) {
+    $.getJSON("./data.json", function( data ) {
         var wrappers = [];
         var wrapperN = 0;
         $.each( data, function( key, val ) {
